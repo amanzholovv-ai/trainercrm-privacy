@@ -8,7 +8,7 @@
 <body style="font-family: -apple-system, Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; line-height: 1.5;">
 
 <h1>Политика конфиденциальности Coach Desk</h1>
-<p><strong>Последнее обновление:</strong> октябрь 2026</p>
+<p><strong>Последнее обновление:</strong> ноябрь 2026</p>
 
 <p>Coach Desk — приложение для персональных тренеров (учёт клиентов, абонементов, расписания и тренировок) и для их клиентов (просмотр своего абонемента, посещений и тренировок).</p>
 
@@ -24,43 +24,46 @@
 <li>Клиенты: имя, номер телефона, абонементы (даты, количество занятий, стоимость), расписание, статусы тренировок, заметки.</li>
 <li>Записанные тренировки и программы: упражнения, веса, повторы, подходы.</li>
 <li>Библиотека упражнений: названия, описания и фотографии тренажёров (с камеры или из галереи).</li>
+<li>Норма питания для клиента: сколько фото еды в день и в какие дни нужно отправлять.</li>
 </ul>
 <p><strong>Данные клиента</strong></p>
 <ul>
 <li>Собственные записанные тренировки и библиотека упражнений.</li>
-<li>Если клиент подключился к тренеру: связь с тренером и правки тренировок (если тренер разрешил редактирование).</li>
+<li>Если клиент подключился к тренеру: связь с тренером и правки тренировок.</li>
+<li>Фотографии питания, которые клиент отправляет своему тренеру (с камеры или из галереи). Фото видят только сам клиент и его текущий тренер. Фото автоматически удаляются через 7 дней; отметка о том, что день выполнен, сохраняется для статистики.</li>
 </ul>
 <p><strong>Технические данные</strong></p>
 <ul>
 <li>Токен устройства для push-уведомлений.</li>
 <li>Обезличенная статистика использования (Firebase Analytics): какие экраны открываются, события в приложении.</li>
+<li>Отчёты о сбоях (Firebase Crashlytics): технические сведения об ошибке, модель устройства и версия системы. Используются только для исправления ошибок.</li>
 <li>Информация о подписке (покупки обрабатывает Apple; данные банковских карт мы не получаем).</li>
 </ul>
 
 <h2>2. Подключение клиента к тренеру</h2>
 <p>Клиент может подключиться к тренеру по коду приглашения, который выдаёт тренер. После подтверждения тренером:</p>
 <ul>
-<li><strong>тренер видит</strong> адрес электронной почты клиента;</li>
+<li><strong>тренер видит</strong> адрес электронной почты клиента и его фотографии питания;</li>
 <li><strong>клиент видит</strong> только данные о себе: свой абонемент, историю посещений и тренировки, которые записал ему тренер.</li>
 </ul>
-<p>Клиент не видит заметки тренера, цены отдельных тренировок и данные других клиентов. Любая сторона может в любой момент отключить связь — тогда эти данные перестают быть доступны клиенту.</p>
+<p>Клиент не видит заметки тренера, цены отдельных тренировок и данные других клиентов. Любая сторона может в любой момент отключить связь — тогда эти данные перестают быть доступны другой стороне.</p>
 
 <h2>3. Как мы используем данные</h2>
 <ul>
-<li>Для работы функций приложения: учёт клиентов, расписание, абонементы, тренировки, отчёты, подключение клиента к тренеру.</li>
-<li>Для уведомлений: напоминания о тренировках и окончании абонемента; клиенту — уведомление о проведённом занятии и остатке занятий.</li>
-<li>Для улучшения приложения (обезличенная аналитика).</li>
+<li>Для работы функций приложения: учёт клиентов, расписание, абонементы, тренировки, питание, отчёты, подключение клиента к тренеру.</li>
+<li>Для уведомлений: напоминания о тренировках и окончании абонемента; клиенту — уведомление о проведённом занятии, остатке занятий и напоминание отправить фото питания; тренеру — уведомление, когда клиент выполнил норму питания.</li>
+<li>Для улучшения приложения (обезличенная аналитика и отчёты о сбоях).</li>
 </ul>
 <p>Мы <strong>не</strong> продаём данные, <strong>не</strong> показываем рекламу и <strong>не</strong> используем данные для отслеживания пользователей в других приложениях и на сайтах.</p>
 
 <h2>4. Где хранятся данные</h2>
-<p>Данные хранятся в сервисах Google Firebase (Authentication, Cloud Firestore, Cloud Functions, Cloud Messaging, Analytics) и частично на вашем устройстве. Доступ к данным защищён правилами безопасности: каждый пользователь видит только свои данные и данные, которыми с ним явно поделились.</p>
+<p>Данные хранятся в сервисах Google Firebase (Authentication, Cloud Firestore, Cloud Functions, Cloud Messaging, Analytics, Crashlytics) и частично на вашем устройстве. Доступ к данным защищён правилами безопасности: каждый пользователь видит только свои данные и данные, которыми с ним явно поделились.</p>
 
 <h2>5. Ваши права</h2>
 <p>Вы можете просматривать и изменять свои данные в приложении, а также запросить их копию или удаление по e-mail ниже.</p>
 
 <h2>6. Удаление аккаунта</h2>
-<p>Удалить аккаунт можно прямо в приложении: <strong>Профиль → Аккаунт → Удалить аккаунт</strong>. При этом безвозвратно удаляются все ваши данные (клиенты, тренировки, программы, библиотека упражнений, связь с тренером), а при входе через Apple отзывается доступ приложения к вашему Apple ID.</p>
+<p>Удалить аккаунт можно прямо в приложении: <strong>Профиль → Аккаунт → Удалить аккаунт</strong>. При этом безвозвратно удаляются все ваши данные (клиенты, тренировки, программы, библиотека упражнений, фотографии и дневник питания, связь с тренером), а при входе через Apple отзывается доступ приложения к вашему Apple ID.</p>
 
 <h2>7. Дети</h2>
 <p>Приложение не предназначено для детей младше 13 лет.</p>
@@ -71,32 +74,32 @@
 <hr style="margin: 40px 0;">
 
 <h1>Privacy Policy — Coach Desk</h1>
-<p><strong>Last updated:</strong> October 2026</p>
+<p><strong>Last updated:</strong> November 2026</p>
 
 <p>Coach Desk is an app for personal trainers (clients, memberships, schedule and workouts) and for their clients (viewing their own membership, attendance and workouts).</p>
 
 <h2>1. Data we collect</h2>
 <ul>
 <li>Account: email address, password (stored encrypted by Google Firebase) or Sign in with Apple (name, if shared; Apple's private relay email is supported); account role (trainer or client).</li>
-<li>Trainer data: clients' names, phone numbers, memberships, schedule, workout statuses and notes; workout logs and programs (exercises, weights, reps, sets); exercise library (names, descriptions and equipment photos from the camera or photo library).</li>
-<li>Client data: own workout logs and exercise library; connection to a trainer and workout edits (if the trainer allows editing).</li>
-<li>Technical data: device push token; anonymized usage analytics (Firebase Analytics); subscription status (purchases are processed by Apple; we never receive card details).</li>
+<li>Trainer data: clients' names, phone numbers, memberships, schedule, workout statuses and notes; workout logs and programs (exercises, weights, reps, sets); exercise library (names, descriptions and equipment photos from the camera or photo library); a client's nutrition goal (how many meal photos per day and on which days).</li>
+<li>Client data: own workout logs and exercise library; connection to a trainer and workout edits; meal photos the client sends to their trainer (from the camera or photo library). Only the client and their current trainer can see them. Photos are deleted automatically after 7 days; the record that a day was completed is kept for statistics.</li>
+<li>Technical data: device push token; anonymized usage analytics (Firebase Analytics); crash reports (Firebase Crashlytics: error details, device model and OS version, used only to fix bugs); subscription status (purchases are processed by Apple; we never receive card details).</li>
 </ul>
 
 <h2>2. Trainer–client connection</h2>
-<p>A client can connect to a trainer with an invite code. After the trainer approves, the trainer sees the client's email, and the client sees only their own membership, attendance history and workouts the trainer logged for them. Either side can disconnect at any time.</p>
+<p>A client can connect to a trainer with an invite code. After the trainer approves, the trainer sees the client's email and meal photos, and the client sees only their own membership, attendance history and workouts the trainer logged for them. Either side can disconnect at any time.</p>
 
 <h2>3. How we use data</h2>
-<p>To provide app features and notifications (workout and membership reminders; attendance and remaining sessions for clients) and to improve the app. We do not sell data, show ads or track users across other apps and websites.</p>
+<p>To provide app features and notifications (workout and membership reminders; attendance, remaining sessions and meal photo reminders for clients; nutrition goal notifications for trainers) and to improve the app (anonymized analytics and crash reports). We do not sell data, show ads or track users across other apps and websites.</p>
 
 <h2>4. Storage</h2>
-<p>Google Firebase (Authentication, Cloud Firestore, Cloud Functions, Cloud Messaging, Analytics) and your device, protected by security rules.</p>
+<p>Google Firebase (Authentication, Cloud Firestore, Cloud Functions, Cloud Messaging, Analytics, Crashlytics) and your device, protected by security rules.</p>
 
 <h2>5. Your rights</h2>
 <p>You can view and edit your data in the app and request a copy or deletion by email.</p>
 
 <h2>6. Account deletion</h2>
-<p>In the app: <strong>Profile → Account → Delete account</strong>. All your data is permanently deleted; for Sign in with Apple accounts the app's access to your Apple ID is revoked.</p>
+<p>In the app: <strong>Profile → Account → Delete account</strong>. All your data is permanently deleted, including meal photos and the nutrition log; for Sign in with Apple accounts the app's access to your Apple ID is revoked.</p>
 
 <h2>7. Children</h2>
 <p>The app is not intended for children under 13.</p>
